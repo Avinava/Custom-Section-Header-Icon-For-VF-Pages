@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>26.0</apiVersion>
+    <description>A custom Section Header component. Replacement of &lt;apex:sectionHeader/&gt;. This component is similar to the standard section header but here you can select your own icon for the header.
+
+For Standard Icons that are available please visit http://blogforce9.blogspot.in/2012/06/need-some-icons-salesforce-icon-sets.html</description>
+    <label>sectionHeader</label>
+</ApexComponent>

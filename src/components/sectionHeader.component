@@ -1,0 +1,25 @@
+<apex:component selfClosing="true">
+     <apex:attribute name="title" type="String" required="true" description="The text displayed at the top of the colored title bar."/>
+     <apex:attribute name="subtitle" type="String" required="true" description="The text displayed just under the main title in the colored title bar."/>
+     <apex:attribute name="iconsrc" type="String" required="true" description="The path to the image displayed, expressed either as a URL or as a static resource or document merge field. For standard Icons Please visit http://blogforce9.blogspot.in/2012/06/need-some-icons-salesforce-icon-sets.html"/>
+      <apex:attribute name="style" type="String" required="false" description="Style attributes"/>
+     <style>
+         .pageTitleIconAV{
+            margin-top: 5px;
+            width: 32px;
+            height: 32px;
+            float:left;
+         }
+     </style>
+     
+     <div class="bPageTitle" style="{!style}">
+        <div class="ptBody">
+            <div class="content">
+                <img src="{!iconsrc}" alt="Twilio Call Subscription" class="pageTitleIconAV" title="{!title}" />
+                <h1 class="pageType">{!title}<span class="titleSeparatingColon">:</span></h1>
+                <h2 class="pageDescription"> {!subtitle}</h2>
+                <div class="blank">&nbsp;</div>
+            </div>
+         </div>              
+    </div>
+</apex:component>
